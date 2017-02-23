@@ -2,6 +2,14 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--extra-lt-green: #EDFFEC;
+	--lt-green: #B6EDAF;
+	--md-green: #84CC7B;
+	--dk-green: #5BA453;
+	--extra-dk-green: #325C2E;
+}
+
 .wrapper {
 	width: 280px;
 	height: 350px;
@@ -17,9 +25,9 @@
 }
 
 .row > div {
-	background: #5BA453;
-	border-top: 0.15px solid #B6EDAF;
-	border-right: 0.15px solid #B6EDAF;;
+	background: var(--dk-green);
+	border-top: 0.15px solid var(--lt-green);
+	border-right: 0.15px solid var(--lt-green);
 	height: 70px;
 	width: 70px;
 	flex: 1;
@@ -28,7 +36,7 @@
 	font-size: 2em;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: lighter;
-	color: #EDFFEC;
+	color: var(--extra-lt-green);
 }
 
 .row > .display {
@@ -38,14 +46,14 @@
 }
 
 .row > .operator {
-	background: #84CC7B;
-	color: #325C2E;
+	background: var(--md-green);
+	color: var(--extra-dk-green);
 }
 
 .row > .operator:hover {
-	color: #EDFFEC;
+	color: var(--extra-lt-green);
 }
 
 .row > .lighten:hover {
-	background: #A2E39A;
+	background: var(--md-green);
 }
