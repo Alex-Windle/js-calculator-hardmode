@@ -1,7 +1,12 @@
+* {
+	box-sizing: border-box;
+}
+
 .wrapper {
-	width: 300px;
-	height: 500px;
+	width: 280px;
+	height: 350px;
 	margin: 0 auto;
+	margin-top: 40px;
 	display: flex;
 	flex-direction: column;
 }
@@ -12,8 +17,35 @@
 }
 
 .row > div {
-	border: 1px solid black;
-	height: 55px;
+	background: #5BA453;
+	border-top: 0.15px solid #B6EDAF;
+	border-right: 0.15px solid #B6EDAF;;
+	height: 70px;
+	width: 70px;
 	flex: 1;
-	font-size: 2.5em;
+	text-align: center;
+	padding-top: 9px;
+	font-size: 2em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+	color: #EDFFEC;
+}
+
+.row > .display {
+	text-align: right; 
+	padding-right: 11px;
+	flex: 2.85;
+}
+
+.row > .operator {
+	background: #84CC7B;
+	color: #325C2E;
+}
+
+.row > .operator:hover {
+	color: #EDFFEC;
+}
+
+.row > .lighten:hover {
+	background: #A2E39A;
 }
