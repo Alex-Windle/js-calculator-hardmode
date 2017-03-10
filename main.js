@@ -1,22 +1,31 @@
 // Grab the value from the DOM
-var zero = document.querySelector('.zero');
-var one = document.querySelector('.one');
-var two = document.querySelector('.two');
-var three = document.querySelector('.three');
-var four = document.querySelector('.four');
-var five = document.querySelector('.five');
-var six = document.querySelector('.six');
-var seven = document.querySelector('.seven');
-var eight = document.querySelector('.eight');
-var nine = document.querySelector('.nine');
-var decimal = document.querySelector('.decimal'); 
-var display = document.querySelector('.display'); 
-var clear = document.querySelector('.clear');
-var add = document.querySelector('.add');
-var subtract = document.querySelector('.subtract');
-var multiply = document.querySelector('.multiply');
-var divide = document.querySelector('.divide');
-var equals = document.querySelector('.equals');
+// var zero = document.querySelector('.zero');
+// var one = document.querySelector('.one');
+// var two = document.querySelector('.two');
+// var three = document.querySelector('.three');
+// var four = document.querySelector('.four');
+// var five = document.querySelector('.five');
+// var six = document.querySelector('.six');
+// var seven = document.querySelector('.seven');
+// var eight = document.querySelector('.eight');
+// var nine = document.querySelector('.nine');
+// var decimal = document.querySelector('.decimal'); 
+// var display = document.querySelector('.display'); 
+// var clear = document.querySelector('.clear');
+// var add = document.querySelector('.add');
+// var subtract = document.querySelector('.subtract');
+// var multiply = document.querySelector('.multiply');
+// var divide = document.querySelector('.divide');
+// var equals = document.querySelector('.equals');
+
+// Refactor
+var htmlClasses = ['zero', 'one', 'two', 'three', 'four', 'five', 
+'six', 'seven', 'eight', 'nine', 'decimal', 'display', 'clear', 
+'add', 'subtract', 'multiply', 'divide', 'equals']; 
+
+var domElements = htmlClasses.map(function(item){
+	return `document.querySelector('.${item}')`;
+}); 
 
 function enterData(e){
 	display.textContent = display.textContent + e.currentTarget.textContent;
